@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_cream"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="12sp"
+        android:textColor="@color/text_muted" />
+
+    <EditText
+        android:id="@+id/etEditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_input_field"
+        android:textColor="@color/text_dark"
+        android:textColorHint="@color/text_muted"
+        android:paddingHorizontal="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textSize="12sp"
+        android:textColor="@color/text_muted" />
+
+    <EditText
+        android:id="@+id/etEditAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_input_field"
+        android:textColor="@color/text_dark"
+        android:textColorHint="@color/text_muted"
+        android:paddingHorizontal="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="12sp"
+        android:textColor="@color/text_muted" />
+
+    <EditText
+        android:id="@+id/etEditCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_input_field"
+        android:textColor="@color/text_dark"
+        android:textColorHint="@color/text_muted"
+        android:paddingHorizontal="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Quantity"
+        android:textSize="12sp"
+        android:textColor="@color/text_muted" />
+
+    <EditText
+        android:id="@+id/etEditQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_field"
+        android:textColor="@color/text_dark"
+        android:textColorHint="@color/text_muted"
+        android:paddingHorizontal="12dp"
+        android:inputType="number" />
+
+</LinearLayout>
