@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_white_card"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="1dp">
+
+    <TextView
+        android:id="@+id/tvOnlineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        tools:text="Harry Potter and the Sorcerer's Stone" />
+
+    <TextView
+        android:id="@+id/tvOnlineAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="13sp"
+        android:textColor="@color/brown_primary"
+        tools:text="by J.K. Rowling (1997)" />
+
+    <Button
+        android:id="@+id/btnRequestBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Request This Book"
+        android:textSize="12sp"
+        android:backgroundTint="@color/status_warning"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

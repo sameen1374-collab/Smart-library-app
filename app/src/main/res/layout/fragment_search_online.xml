@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_cream"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Online (Open Library)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can't find a book locally? Search the web and request it."
+        android:textSize="12sp"
+        android:textColor="@color/text_muted"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgSearchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/rbByTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Title"
+            android:textColor="@color/text_dark"
+            android:buttonTint="@color/brown_primary"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbByAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="By Author"
+            android:textColor="@color/text_dark"
+            android:buttonTint="@color/brown_primary" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etOnlineSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search by title..."
+            android:background="@drawable/bg_input_field"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_muted"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnOnlineSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Search"
+            android:backgroundTint="@color/brown_primary"
+            android:textColor="@color/text_white" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/brown_primary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvOnlineStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type a book title above and tap Search."
+        android:textColor="@color/text_muted"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOnlineResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
