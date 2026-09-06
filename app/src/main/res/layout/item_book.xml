@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_white_card"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="1dp">
+
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        tools:text="The Great Gatsby" />
+
+    <TextView
+        android:id="@+id/tvBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="13sp"
+        android:textColor="@color/brown_primary"
+        tools:text="by F. Scott Fitzgerald" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvBookId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_muted"
+            tools:text="ID: 101" />
+
+        <TextView
+            android:id="@+id/tvBookCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_muted"
+            tools:text="Category: Fiction" />
+
+        <TextView
+            android:id="@+id/tvBookAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/status_available"
+            tools:text="✓ Available (2)" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Reserve This Book"
+        android:textSize="12sp"
+        android:backgroundTint="@color/status_warning"
+        android:textColor="@color/text_white"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>
